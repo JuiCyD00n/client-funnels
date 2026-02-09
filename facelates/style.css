@@ -1,0 +1,662 @@
+/* ===================================
+   FACELATES SALES PAGE STYLES
+   =================================== */
+
+/* CSS Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette - Sophisticated & Feminine */
+    --rose-gold: #d4a59a;
+    --deep-teal: #2c5f5d;
+    --cream: #faf7f2;
+    --warm-white: #ffffff;
+    --dark-text: #2d2d2d;
+    --light-text: #6b6b6b;
+    --accent-gold: #c9a68c;
+    --success-green: #4a7c59;
+    
+    /* Typography */
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
+    
+    /* Spacing */
+    --section-padding: 80px 20px;
+    --container-max-width: 1200px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--dark-text);
+    line-height: 1.7;
+    background-color: var(--cream);
+    font-size: 16px;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--deep-teal);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--deep-teal);
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--deep-teal);
+}
+
+p {
+    margin-bottom: 16px;
+    color: var(--dark-text);
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+.hero {
+    background: linear-gradient(135deg, var(--cream) 0%, #f5ebe0 100%);
+    padding: var(--section-padding);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content {
+    padding-right: 20px;
+}
+
+.hero-headline {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: var(--deep-teal);
+}
+
+.hero-subheadline {
+    font-size: 1.2rem;
+    color: var(--light-text);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.cta-box {
+    background: var(--warm-white);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cta-button {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 18px 36px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button.primary {
+    background: var(--deep-teal);
+    color: var(--warm-white);
+}
+
+.cta-button.primary:hover {
+    background: #1f4644;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 95, 93, 0.3);
+}
+
+.cta-button.large {
+    font-size: 1.25rem;
+    padding: 22px 48px;
+}
+
+.cta-subtext {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.hero-image .image-placeholder {
+    background: var(--rose-gold);
+    height: 500px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* ===================================
+   PROBLEM SECTION
+   =================================== */
+.problem {
+    background: var(--warm-white);
+    padding: var(--section-padding);
+}
+
+.problem-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.problem h2 {
+    margin-bottom: 32px;
+}
+
+.problem p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.problem-highlight {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--deep-teal);
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+/* ===================================
+   SOLUTION SECTION
+   =================================== */
+.solution {
+    background: var(--cream);
+    padding: var(--section-padding);
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.solution-image .image-placeholder {
+    background: var(--accent-gold);
+    height: 450px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.solution-content h2 {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--deep-teal);
+    margin-bottom: 20px;
+}
+
+.solution-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.solution-highlight {
+    background: var(--warm-white);
+    padding: 24px;
+    border-left: 4px solid var(--rose-gold);
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+.video-container {
+    margin-top: 60px;
+}
+
+.video-placeholder {
+    background: var(--deep-teal);
+    height: 400px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ===================================
+   SOCIAL PROOF SECTION
+   =================================== */
+.social-proof {
+    background: var(--warm-white);
+    padding: var(--section-padding);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--light-text);
+    margin-bottom: 48px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.testimonial-card {
+    background: var(--cream);
+    padding: 32px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.image-placeholder.small {
+    background: var(--rose-gold);
+    height: 200px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-white);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.05rem;
+    font-style: italic;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    font-weight: 500;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3.5rem;
+    color: var(--rose-gold);
+    margin-bottom: 8px;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+/* ===================================
+   OFFER SECTION
+   =================================== */
+.offer {
+    background: linear-gradient(135deg, var(--deep-teal) 0%, #1f4644 100%);
+    padding: var(--section-padding);
+    color: var(--warm-white);
+}
+
+.offer h2,
+.offer h3 {
+    color: var(--warm-white);
+}
+
+.offer-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 48px;
+    color: var(--cream);
+}
+
+.offer-box {
+    background: var(--warm-white);
+    border-radius: 16px;
+    padding: 48px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    color: var(--dark-text);
+}
+
+.offer-content h3 {
+    color: var(--deep-teal);
+    margin-bottom: 24px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    padding-left: 8px;
+}
+
+.offer-pricing {
+    background: var(--cream);
+    padding: 36px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.price-container {
+    margin-bottom: 24px;
+}
+
+.original-price {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 8px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.current-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--deep-teal);
+    margin-bottom: 8px;
+}
+
+.current-price .price {
+    font-size: 3rem;
+    font-family: var(--font-heading);
+    display: block;
+    margin: 8px 0;
+}
+
+.savings {
+    font-size: 1.2rem;
+    color: var(--success-green);
+    font-weight: 600;
+}
+
+.payment-options {
+    font-size: 1rem;
+    color: var(--light-text);
+    margin-bottom: 24px;
+}
+
+.urgency {
+    background: #fff3cd;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border-left: 4px solid #ffc107;
+}
+
+.urgency-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #856404;
+    margin-bottom: 8px;
+}
+
+.scarcity-text {
+    font-size: 0.95rem;
+    color: #856404;
+    margin-bottom: 0;
+}
+
+.guarantee {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 2px solid var(--rose-gold);
+}
+
+.guarantee-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--deep-teal);
+    margin-bottom: 8px;
+}
+
+.guarantee p {
+    font-size: 0.95rem;
+    color: var(--light-text);
+}
+
+/* ===================================
+   FAQ SECTION
+   =================================== */
+.faq {
+    background: var(--cream);
+    padding: var(--section-padding);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.faq-item {
+    background: var(--warm-white);
+    padding: 32px;
+    border-radius: 12px;
+    border-left: 4px solid var(--rose-gold);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--deep-teal);
+}
+
+.faq-item p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--dark-text);
+    margin-bottom: 0;
+}
+
+/* ===================================
+   FINAL CTA SECTION
+   =================================== */
+.final-cta {
+    background: var(--warm-white);
+    padding: var(--section-padding);
+    text-align: center;
+}
+
+.final-cta h2 {
+    margin-bottom: 32px;
+}
+
+.final-message {
+    max-width: 800px;
+    margin: 0 auto 24px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.final-cta .cta-button {
+    max-width: 600px;
+    margin: 40px auto 16px;
+}
+
+.final-subtext {
+    font-size: 0.95rem;
+    color: var(--light-text);
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+footer {
+    background: var(--deep-teal);
+    color: var(--warm-white);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--warm-white);
+    margin-bottom: 8px;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablet */
+@media (max-width: 968px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .solution-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .offer-box {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    :root {
+        --section-padding: 48px 16px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    .hero-headline {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subheadline {
+        font-size: 1.1rem;
+    }
+    
+    .cta-box {
+        padding: 24px;
+    }
+    
+    .cta-button {
+        font-size: 1rem;
+        padding: 16px 28px;
+    }
+    
+    .cta-button.large {
+        font-size: 1.1rem;
+        padding: 18px 32px;
+    }
+    
+    .hero-image .image-placeholder {
+        height: 300px;
+    }
+    
+    .problem p,
+    .solution-content p {
+        font-size: 1rem;
+    }
+    
+    .offer-box {
+        padding: 32px 24px;
+    }
+    
+    .stat h3 {
+        font-size: 2.5rem;
+    }
+}
