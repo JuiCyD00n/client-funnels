@@ -1,0 +1,232 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #2D2A4A;
+    background: #F8F7FF;
+}
+
+/* Page Layout */
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    background: white;
+}
+
+.content-container {
+    max-width: 540px;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #FF1493;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+/* Headline */
+.headline {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #2D2A4A;
+    margin-bottom: 20px;
+}
+
+.subheadline {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6B6B8C;
+    margin-bottom: 40px;
+}
+
+/* Benefits */
+.benefits {
+    margin-bottom: 40px;
+}
+
+.benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.benefit-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A4A6A;
+}
+
+.benefit-text strong {
+    color: #FF1493;
+    font-weight: 700;
+}
+
+/* Form */
+.opt-in-form {
+    background: #F8F7FF;
+    padding: 32px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #FF1493;
+}
+
+.form-button {
+    width: 100%;
+    padding: 18px;
+    background: #FF1493;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-button:hover {
+    background: #E01080;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3);
+}
+
+.form-disclaimer {
+    font-size: 13px;
+    color: #9B9BB8;
+    text-align: center;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+/* Trust */
+.trust {
+    text-align: center;
+}
+
+.trust-text {
+    font-size: 14px;
+    color: #6B6B8C;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(135deg, #FFE5F0 0%, #FFD0E5 100%);
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-content {
+    max-width: 400px;
+}
+
+.sidebar-image-placeholder {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    color: #FF1493;
+    font-weight: 600;
+    margin-bottom: 32px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Testimonials */
+.testimonial-box {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-quote {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4A4A6A;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF1493;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .page-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .headline {
+        font-size: 36px;
+    }
+
+    .main-content {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .headline {
+        font-size: 32px;
+    }
+
+    .subheadline {
+        font-size: 16px;
+    }
+
+    .opt-in-form {
+        padding: 24px;
+    }
+}

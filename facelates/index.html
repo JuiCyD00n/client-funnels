@@ -3,228 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the science-backed face training method that's helping thousands of women lift, tone, and sculpt their way to a naturally youthful glow—without needles, fillers, or expensive treatments.">
-    <title>Facelates - Natural Face Training for Timeless Beauty</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Facelates Demos - Review</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+        h1 {
+            color: white;
+            font-size: 42px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .demos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .demo-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .demo-card:hover {
+            transform: translateY(-8px);
+        }
+        .demo-number {
+            display: inline-flex;
+            background: #FF1493;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .demo-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2D2A4A;
+            margin-bottom: 12px;
+        }
+        .demo-description {
+            font-size: 15px;
+            color: #6B6B8C;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .demo-link {
+            display: block;
+            background: #FF1493;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .demo-link:hover {
+            background: #E01080;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-headline">Unlock Your Fountain of Youth: The 5-Minute Facelates Ritual That's More Effective Than Botox</h1>
-                <p class="hero-subheadline">Discover the science-backed face training method that's helping thousands of women lift, tone, and sculpt their way to a naturally youthful glow—without needles, fillers, or expensive treatments.</p>
-                <div class="cta-box">
-                    <button class="cta-button primary">Get My Free 3-Part Video Series</button>
-                    <p class="cta-subtext">Join 1 million+ women in the natural beauty movement</p>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder">
-                    <p>Before/After Transformation Image</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="problem">
-        <div class="container">
-            <div class="problem-content">
-                <h2>You've Tried Everything, Haven't You?</h2>
-                <p>The expensive creams that promised to turn back the clock. The painful injections that left you looking frozen instead of fresh. The endless skincare routines that took up hours of your day but delivered nothing but disappointment.</p>
-                
-                <p>And the worst part? You're watching the years add up in the mirror. The sagging around your jawline. The fine lines that seem to multiply overnight. The puffiness that makes you look tired even when you're not.</p>
-                
-                <p>Meanwhile, the beauty industry keeps selling you the same tired solutions: more creams, more procedures, more money down the drain. They want you to believe that aging is inevitable and that the only way to fight it is to keep spending.</p>
-                
-                <p class="problem-highlight">But what if everything you've been told is wrong?</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="solution">
-        <div class="container">
-            <div class="solution-grid">
-                <div class="solution-image">
-                    <div class="image-placeholder">
-                        <p>Trinh Georg Photo</p>
-                    </div>
-                </div>
-                <div class="solution-content">
-                    <h2>The Revolutionary Discovery That Changed Everything</h2>
-                    <p class="intro-text">Hi, I'm Trinh Georg, and I used to feel exactly like you do right now.</p>
-                    
-                    <p>After both of my pregnancies, I struggled with postpartum depression and watched my face lose its tone and vitality. I tried every cream on the market. Nothing worked.</p>
-                    
-                    <p>Then I had a realization that changed everything: <strong>If I could get my body back with exercise, why couldn't I do the same for my face?</strong></p>
-                    
-                    <p>Your face has over 40 muscles, and just like the muscles in your body, they need to be trained. When these muscles weaken, your skin loses support, leading to sagging, wrinkles, and that tired appearance you're trying to fight.</p>
-                    
-                    <p class="solution-highlight">That's when I created Facelates—a revolutionary face training system that works with your body's natural structure to lift, tone, and sculpt your face from the inside out.</p>
-                </div>
+    <div class="container">
+        <h1>Facelates Demo Pages</h1>
+        <p class="subtitle">Review the improved pages before deployment</p>
+        
+        <div class="demos-grid">
+            <div class="demo-card">
+                <div class="demo-number">1</div>
+                <h2 class="demo-title">Homepage Redesign</h2>
+                <p class="demo-description">A proper homepage that segments traffic and creates a clear path to conversion</p>
+                <a href="/homepage/" class="demo-link">View Homepage →</a>
             </div>
             
-            <div class="video-container">
-                <div class="video-placeholder">
-                    <p>📹 Watch: The Science Behind Facelates (2:30)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof Section -->
-    <section class="social-proof">
-        <div class="container">
-            <h2>Real Women, Real Results</h2>
-            <p class="section-subtitle">Join thousands of women who've transformed their faces naturally</p>
-            
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="image-placeholder small">Before/After</div>
-                    <p class="testimonial-text">"My jawline is more defined than it's been in 10 years. People keep asking if I've had work done!"</p>
-                    <p class="testimonial-author">— Sarah M., Age 42</p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="image-placeholder small">Before/After</div>
-                    <p class="testimonial-text">"I look 10 years younger and I feel amazing. No needles, no downtime, just results."</p>
-                    <p class="testimonial-author">— Jennifer L., Age 38</p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="image-placeholder small">Before/After</div>
-                    <p class="testimonial-text">"The puffiness under my eyes is gone and my cheeks are lifted. This actually works!"</p>
-                    <p class="testimonial-author">— Michelle K., Age 51</p>
-                </div>
+            <div class="demo-card">
+                <div class="demo-number">2</div>
+                <h2 class="demo-title">Opt-In Page</h2>
+                <p class="demo-description">Simplified lead magnet page focused on one clear benefit and action</p>
+                <a href="/opt-in/" class="demo-link">View Opt-In →</a>
             </div>
             
-            <div class="stats">
-                <div class="stat">
-                    <h3>1M+</h3>
-                    <p>Women Transformed</p>
-                </div>
-                <div class="stat">
-                    <h3>50K+</h3>
-                    <p>5-Star Reviews</p>
-                </div>
-                <div class="stat">
-                    <h3>94%</h3>
-                    <p>See Results in 30 Days</p>
-                </div>
+            <div class="demo-card">
+                <span class="badge">NEW VERSION</span>
+                <div class="demo-number">3</div>
+                <h2 class="demo-title">Sales Page V2</h2>
+                <p class="demo-description">Justin Welsh-inspired design with bold visuals, storytelling, and enhanced persuasion</p>
+                <a href="/sales-page-v2/" class="demo-link">View Sales Page V2 →</a>
+            </div>
+            
+            <div class="demo-card">
+                <div class="demo-number">3</div>
+                <h2 class="demo-title">Sales Page V1</h2>
+                <p class="demo-description">Original clean version with removed fake scarcity</p>
+                <a href="/sales-page/" class="demo-link">View Sales Page V1 →</a>
             </div>
         </div>
-    </section>
-
-    <!-- Offer Section -->
-    <section class="offer">
-        <div class="container">
-            <h2>Introducing: The Facelates Timeless Beauty Program</h2>
-            <p class="offer-subtitle">Lifetime Access to the Complete Face Training System</p>
-            
-            <div class="offer-box">
-                <div class="offer-content">
-                    <h3>What You Get:</h3>
-                    <ul class="benefits-list">
-                        <li>✨ <strong>Daily Guided Routines</strong> – Short, effective face-training sessions for every area of your face</li>
-                        <li>✨ <strong>Targeted Programs</strong> – Specialized routines for cheek lift, jawline definition, under-eye smoothing, and more</li>
-                        <li>✨ <strong>Massage & Self-Care Techniques</strong> – Soothing methods to enhance your glow and reduce puffiness</li>
-                        <li>✨ <strong>The Facelates Library</strong> – Tips, best practices, and FAQs to help you practice safely and effectively</li>
-                        <li>✨ <strong>The Facelates Circle</strong> – A private community of like-minded women supporting each other on their natural beauty journey</li>
-                    </ul>
-                </div>
-                
-                <div class="offer-pricing">
-                    <div class="price-container">
-                        <p class="original-price">Regular Price: <span class="strikethrough">$497</span></p>
-                        <p class="current-price">Pre-Launch Special: <span class="price">$197</span></p>
-                        <p class="savings">Save $300 Today</p>
-                    </div>
-                    
-                    <div class="payment-options">
-                        <p>Or 3 payments of $67</p>
-                    </div>
-                    
-                    <div class="urgency">
-                        <p class="urgency-text">⏰ This pre-launch price expires in 48 hours</p>
-                        <p class="scarcity-text">Only 50 spots remaining at this price</p>
-                    </div>
-                    
-                    <button class="cta-button primary large">Join the Timeless Beauty Program Now</button>
-                    
-                    <div class="guarantee">
-                        <p class="guarantee-text">🛡️ <strong>30-Day Money-Back Guarantee</strong></p>
-                        <p>Try Facelates risk-free. If you don't see visible results in 30 days, we'll refund every penny.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>How long until I see results?</h3>
-                    <p>Most women notice visible improvements within 2-3 weeks of consistent practice. Significant transformations typically occur within 30-60 days.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Is this safe for my skin type?</h3>
-                    <p>Yes! Facelates is a natural, non-invasive method that works for all skin types and ages. There are no harsh chemicals or procedures involved.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What if I've already had Botox or fillers?</h3>
-                    <p>Facelates can complement your existing treatments and may even help you reduce your dependence on them over time. Always consult with your provider first.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>How much time do I need to commit each day?</h3>
-                    <p>Just 5-10 minutes a day is all you need. Our routines are designed to fit seamlessly into your morning or evening routine.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What if I'm not tech-savvy?</h3>
-                    <p>Our platform is incredibly easy to use. If you can watch a video on your phone or computer, you can use Facelates. Plus, our support team is here to help.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can I really get results without surgery?</h3>
-                    <p>Absolutely. Thousands of women have achieved remarkable results through face training alone. Your facial muscles respond to exercise just like your body muscles do.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>You Have a Choice Right Now</h2>
-            <p class="final-message">You can keep doing what you've been doing—spending money on temporary fixes that never deliver lasting results. Or you can take control of your aging process and discover what your face is truly capable of.</p>
-            
-            <p class="final-message">Join the thousands of women who've already transformed their faces with Facelates. Your naturally youthful glow is waiting.</p>
-            
-            <button class="cta-button primary large">Yes, I'm Ready to Transform My Face</button>
-            
-            <p class="final-subtext">🔒 Secure checkout • Instant access • 30-day guarantee</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Facelates. All rights reserved.</p>
-            <p class="footer-note">This is a demo sales page created for marketing purposes.</p>
-        </div>
-    </footer>
-
+    </div>
 </body>
 </html>
