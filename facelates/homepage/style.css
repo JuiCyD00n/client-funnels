@@ -445,3 +445,12 @@ body {
         text-align: center;
     }
 }
+
+/* Hero Image */
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(255, 20, 147, 0.15);
+    object-fit: cover;
+}
