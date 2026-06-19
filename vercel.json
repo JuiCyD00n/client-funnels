@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/darrenhardy/((?!assets/).*)",
+      "destination": "/darrenhardy/index.html"
+    }
+  ]
+}
